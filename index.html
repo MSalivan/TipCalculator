@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h1>Калькулятор Чаевых</h1>
+            <div class="content">
+                <input type="text" placeholder="Сумма клиента" id="clientPayment">
+                <input type="text" placeholder="Сумма счета" id="billAmount">
+                <button class="btn" id="submit-btn">Рассчитать</button>
+                <div class="output">
+                    <p><span class="label">Чаевые офицанта:</span> <span class="value" id="tipAmount"></span></p>
+                    <p><span class="label" id="changeLabel">Сдача:</span> <span class="value" id="change"></span></p>
+                    <p><span class="label" id="extraAmountLabel">Клиенту нужно доплатить:</span> <span class="value" id="extraAmount"></span></p>
+                    <p><span class="label">Итоговая сумма:</span> <span class="value" id="totalAmount"></span></p>
+                </div>
+                <button class="btn" id="reset">Заново</button>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
